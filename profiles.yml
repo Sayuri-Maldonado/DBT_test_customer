@@ -1,0 +1,16 @@
+customers_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: 'not needed'
+      user: 'not needed'
+      role: accountadmin
+      database: TEST_CUSTOMER_DBT_DB
+      schema: dev
+      warehouse: S3_CUSTOMER_TEST_DBT_WH
+      schema:RAW
+      threads: 1
+
+
+  
