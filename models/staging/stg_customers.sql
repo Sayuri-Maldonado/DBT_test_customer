@@ -10,5 +10,6 @@ last_name,
 email,
 age,
 city
-from raw.customer_db
+from  {{ source('TB_DBT', 'customer_db') }}
+//from raw.customer_db
 where id is not null

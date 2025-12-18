@@ -1,4 +1,3 @@
-
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
@@ -34,9 +33,9 @@ clean-targets: [target, dbt_modules]
 # using the `{{ config(...) }}` macro.
 
 models:
-  customer_test:
-    # Applies to all files under models/example/
+  customers_test:
     marts:
       +materialized: table
     staging:
       +materialized: view
+

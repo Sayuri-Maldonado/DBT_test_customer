@@ -1,0 +1,30 @@
+version: 2
+
+sources:
+  - name: TB_DBT
+    description: Datos crudos provenientes del sistema fuente.
+    database: TEST_CUSTOMER_DBT_DB
+    schema: RAW
+
+    tables:
+      - name: customer_db
+        description: Tabla RAW con información de clientes.
+
+        columns:
+          - name: id
+            description: Identificador único del cliente.
+
+          - name: first_name
+            description: Nombre del cliente.
+
+          - name: last_name
+            description: Apellido del cliente.
+
+          - name: email
+            description: Correo electrónico del cliente.
+
+          - name: age
+            description: Edad del cliente.
+
+          - name: city
+            description: Ciudad del cliente.

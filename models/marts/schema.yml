@@ -1,4 +1,3 @@
-
 version: 2
 
 models:
@@ -19,3 +18,22 @@ models:
             tests:
                 - unique
                 ##- not_null
+                
+    - name: customers_test
+      description: "A starter dbt model with customer table"
+      columns:
+          - name: id
+            description: Identificador único del cliente.
+            tests:
+            - not_null
+            #- unique
+          - name: first_name
+            description: Nombre del cliente.
+          - name: last_name
+            description: Apellido del cliente.
+          - name: email
+            description: Correo electrónico del cliente.
+          - name: age
+            description: Edad del cliente.
+          - name: city
+            description: Ciudad de residencia del cliente.
