@@ -1,4 +1,4 @@
-customers_dbt:
+DBT_test_customer:
   target: dev
   outputs:
     dev:
@@ -9,8 +9,7 @@ customers_dbt:
       database: TEST_CUSTOMER_DBT_DB
       schema: dev
       warehouse: S3_CUSTOMER_TEST_DBT_WH
-      schema:RAW
-      threads: 1
+  
 
 
   
